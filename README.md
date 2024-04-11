@@ -31,7 +31,7 @@ The Library Management System is a web-based application designed to facilitate 
 
 **4. Update Database Configuration:** If the application uses a database, ensure that the database connection properties (e.g., URL, username, password) are correctly configured. This information is typically found in the application.properties or application.yml file in the application resources.
 
-**5. Build the Application: ** 
+**5. Build the Application:** 
   - Open a terminal or command prompt.
   - Navigate to the root directory of the cloned repository.
   - Run the appropriate build command based on the build tool used by the application:
