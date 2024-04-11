@@ -1,2 +1,35 @@
 # Library-Management
 Library Management System API using Spring Boot. The system should allow librarians to manage books, patrons, and borrowing records.
+
+**To run the application and interact with its API endpoints, follow these steps:**
+
+1. Clone the Repository: Clone the repository containing the application code from your preferred version control system (e.g., GitHub).
+
+2. Set Up the Environment:
+  - Ensure you have Java Development Kit (JDK) installed on your machine.
+  - Make sure you have Apache Maven or Gradle installed. The application might use one of these build tools for dependency management and building the project.
+
+3. Configure the Database: Ensure that you have the required database set up locally or in your environment. This might involve installing and configuring a database server such as MySQL, PostgreSQL, or H2.
+
+4. Update Database Configuration: If the application uses a database, ensure that the database connection properties (e.g., URL, username, password) are correctly configured. This information is typically found in the application.properties or application.yml file in the application resources.
+
+5. Build the Application:  
+  - Open a terminal or command prompt.
+  - Navigate to the root directory of the cloned repository.
+  - Run the appropriate build command based on the build tool used by the application:
+      For Maven: mvn clean install
+      For Gradle: gradle clean build
+    
+6. Run the Application:
+  - After successfully building the application, you can run it using the following command:
+      For Maven: mvn spring-boot:run
+      For Gradle: gradle bootRun
+  - Alternatively, you can run the generated JAR file directly:
+      java -jar <path-to-jar-file>
+
+7. Access API Endpoints:
+  - Once the application is running, you can access its API endpoints using a tool like Postman, or a web browser.
+  - The API endpoints should be accessible at the base URL http://localhost:<port>/api, where <port> is the port number specified in the application configuration (usually 8080 by default).
+  - Interact with the endpoints according to the defined API documentation or specifications.
+
+Once you have finished testing or using the application, gracefully shut it down by stopping the execution process (e.g., pressing Ctrl + C in the terminal window where the application is running).
