@@ -9,11 +9,13 @@ The Library Management System is a web-based application designed to facilitate 
   - Update Book: Enables librarians to update existing book information such as title, author, publication year, and ISBN.
   - Delete Book: Allows librarians to remove books from the library's collection.
   - Retrieve All Books: Provides a list of all books available in the library.
+    
 **2. Patron Management**
   - Add Patron: Enables librarians to add new patrons to the library's database.
   - Update Patron: Allows librarians to update patron information such as name and contact information.
   - Delete Patron: Allows librarians to remove patrons from the library's database.
   - Retrieve All Patrons: Provides a list of all patrons registered with the library.
+    
 **3. Borrowing Management**
   - Borrow Book: Allows patrons to borrow books from the library by specifying the book ID and patron ID. Automatically records borrowing information, including the return date.
   - Return Book: Enables patrons to return borrowed books to the library. Updates the borrowing record to indicate that the book has been returned.
@@ -59,22 +61,21 @@ Once you have finished testing or using the application, gracefully shut it down
 - MySQL (database)
 
 # API Documentation
-● Implement RESTful endpoints to handle the following operations:
-● Book management endpoints:
-● GET /api/books: Retrieve a list of all books.
-● GET /api/books/{id}: Retrieve details of a specific book by ID.
-● POST /api/books: Add a new book to the library.
-● PUT /api/books/{id}: Update an existing book's information.
-● DELETE /api/books/{id}: Remove a book from the library.
-● Patron management endpoints:
-● GET /api/patrons: Retrieve a list of all patrons.
-● GET /api/patrons/{id}: Retrieve details of a specific patron by ID.
-● POST /api/patrons: Add a new patron to the system.
-● PUT /api/patrons/{id}: Update an existing patron's information.
-● DELETE /api/patrons/{id}: Remove a patron from the system.
-● Borrowing endpoints:
-● POST /api/borrow/{bookId}/patron/{patronId}: Allow a patron to borrow a book.
-● PUT /api/return/{bookId}/patron/{patronId}: Record the return of a borrowed book by a patron.
+**Book management endpoints:**
+  - GET /api/books: Retrieve a list of all books.
+  - GET /api/books/{id}: Retrieve details of a specific book by ID.
+  - POST /api/books: Add a new book to the library.
+  - PUT /api/books/{id}: Update an existing book's information.
+  - DELETE /api/books/{id}: Remove a book from the library.
+**Patron management endpoints:**
+  - GET /api/patrons: Retrieve a list of all patrons.
+  - GET /api/patrons/{id}: Retrieve details of a specific patron by ID.
+  - POST /api/patrons: Add a new patron to the system.
+  - PUT /api/patrons/{id}: Update an existing patron's information.
+  - DELETE /api/patrons/{id}: Remove a patron from the system.
+**Borrowing endpoints:**
+  - POST /api/borrow/{bookId}/patron/{patronId}: Allow a patron to borrow a book.
+  - PUT /api/return/{bookId}/patron/{patronId}: Record the return of a borrowed book by a patron.
 
 # Contributors
 **Omar Mahmoud**
